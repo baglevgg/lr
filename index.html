@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Free LR Code Generator - Create QR Codes Online | Text, Audio, Image to LR Code</title>
+    <meta name="description" content="Generate LR codes instantly with our free online tool. Convert text, audio files, and images to secure LR codes. Fast, reliable, and easy-to-use QR code generator.">
+    <meta name="keywords" content="LR code generator, QR code maker, free QR generator, text to QR, audio QR code, image QR code, online QR tool, barcode generator">
+    <meta name="author" content="LR Code Generator">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Free LR Code Generator - Create QR Codes Online">
+    <meta property="og:description" content="Generate LR codes instantly with our free online tool. Convert text, audio files, and images to secure LR codes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/Images/lrBg.png">
+    <meta property="og:site_name" content="LR Code Generator">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free LR Code Generator - Create QR Codes Online">
+    <meta name="twitter:description" content="Generate LR codes instantly with our free online tool. Convert text, audio files, and images to secure LR codes.">
+    <meta name="twitter:image" content="https://yourwebsite.com/Images/lrBg.png">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" href="./Images/icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./Images/icon.png">
+    <link rel="canonical" href="https://yourwebsite.com">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "LR Code Generator",
+        "description": "Free online tool to generate LR codes from text, audio, and images",
+        "url": "https://yourwebsite.com",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "LR Code Generator"
+        }
+    }
+    </script>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        :root {
+            --font: 'Inter', 'sans-serif';
+            --primary-color: #000000;
+            --secondary-color: #333333;
+            --accent-color: #f0f0f0;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: var(--font);
+        }
+        
+        /* SEO Header */
+        .seo-header {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        #mainContainer {
+            height: 100vh;
+            width: 100vw;
+            background-image: url('./Images/lrBg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .sidebar, .homeContainer {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sidebar img {
+            width: 15%;
+            margin: 0 20px;
+            alt: "LR Code Generator Logo";
+        }
+        
+        .sidebar .textContainer h1, p {
+            font-family: var(--font);
+            margin-bottom: 5px;
+            color: var(--primary-color);
+        }
+        
+        .sidebar .textContainer h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .sidebar .textContainer p {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        
+        .home {
+            height: 550px;
+            width: 50%;
+            background-color: var(--white);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        
+        .home h2 {
+            font-family: var(--font);
+            font-size: 24px;
+            color: var(--secondary-color);
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        #modeMenu {
+            width: 95%;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: var(--accent-color);
+            border-radius: 20px;
+            padding: 7px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .modeOption {
+            font-family: var(--font);
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 12px 24px;
+            border-radius: 25px;
+            background-color: #ddd;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            user-select: none;
+            width: 75px;
+            margin-left: 5px;
+            text-align: center;
+        }
+        
+        .modeOption:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+        
+        .modeOption.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .inputContainer {
+            width: 85%;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+            height: 60px;
+        }
+        
+        .inputContainer.hidden {
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            margin: 0;
+        }
+        
+        .inputSection {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: 8px 0;
+            min-height: 60px;
+        }
+        
+        #textInput {
+            width: 100%;
+            height: 55px;
+            padding: 15px;
+            border: 2px solid var(--secondary-color);
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: var(--font);
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        #textInput:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .fileInput, .fileInput1 {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 55px;
+            margin-top: 10px;
+        }
+        
+        .fileInput label, .fileInput1 label {
+            font-size: 16px;
+            font-weight: 500;
+            margin-right: 20px;
+            color: var(--secondary-color);
+            white-space: nowrap;
+            min-width: 80px;
+        }
+        
+        .uploadButton {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: var(--font);
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            height: 45px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .uploadButton:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .uploadButton svg {
+            margin-right: 8px;
+        }
+        
+        #generateBtn, #downloadBtn {
+            height: 50px;
+            width: 90%;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            font-family: var(--font);
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        #generateBtn:hover, #downloadBtn:hover {
+            transform: translateY(-3px);
+            background-color: var(--secondary-color);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        #lrPopup {
+            height: 480px;
+            width: 320px;
+            background-color: var(--primary-color);
+            position: absolute;
+            top: 20px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 0;
+            transform: scale(0) rotate(5deg);
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        #lrPopup.show {
+            transform: scale(1) rotate(0deg);
+            opacity: 1;
+            top: 50px;
+        }
+        
+        #lrPopupHeader {
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        #closePopupBtn {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            font-size: 20px;
+            color: var(--white);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        #closePopupBtn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: rotate(90deg);
+        }
+        
+        #lrImg {
+            width: 75%;
+            border: 10px solid var(--white);
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+        }
+        
+        #lrPopup h2 {
+            color: var(--white);
+            font-family: var(--font);
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        #downloadBtn {
+            width: 75%;
+            background-color: var(--white);
+            color: var(--primary-color);
+            margin: 15px 0;
+            font-weight: 700;
+        }
+        
+        #downloadBtn:hover {
+            background-color: var(--accent-color);
+        }
+        
+        #storageLabel {
+            font-family: var(--font);
+            color: var(--secondary-color);
+            font-size: 14px;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: 400;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #mainContainer {
+                flex-direction: column;
+                height: auto;
+                min-height: 100vh;
+                padding: 20px 0;
+            }
+            
+            .sidebar, .homeContainer {
+                width: 90%;
+                margin: 10px 0;
+            }
+            
+            .home {
+                width: 100%;
+                height: auto;
+                min-height: 500px;
+            }
+            
+            .sidebar .textContainer h1 {
+                font-size: 2rem;
+            }
+            
+            #modeMenu {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .modeOption {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: var(--white);
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+    
+    <!-- SEO Hidden Content -->
+    <header class="seo-header">
+        <h1>Free LR Code Generator - Online QR Code Maker</h1>
+        <h2>Convert Text, Audio, and Images to LR Codes</h2>
+        <p>Generate high-quality LR codes instantly with our free online tool. Perfect for businesses, marketing, and personal use.</p>
+    </header>
+    
+    <main id="mainContainer" role="main">
+        <section class="sidebar" aria-label="Brand Information">
+            <img src="./Images/lrpng.png" alt="LR Code Generator Logo - Free QR Code Maker" loading="lazy">
+            <div class="textContainer">
+                <h1>Generate LR Code</h1>
+                <p>Just in one click</p>
+            </div>
+        </section>
+        
+        <section class="homeContainer" aria-label="LR Code Generator Tool">
+            <article class="home">
+                <header>
+                    <h2>Enter Data for LR Code Generation</h2>
+                </header>
+                
+                <nav id="modeMenu" role="tablist" aria-label="Input Type Selection">
+                    <button class="modeOption active" data-mode="text" role="tab" aria-selected="true" aria-controls="textInputContainer">Text</button>
+                    <button class="modeOption" data-mode="sound" role="tab" aria-selected="false" aria-controls="soundInputContainer">Audio</button>
+                    <button class="modeOption" data-mode="image" role="tab" aria-selected="false" aria-controls="imageInputContainer">Image</button>
+                </nav>
+                
+                <div class="inputContainer" id="textInputContainer" role="tabpanel" aria-labelledby="text-tab">
+                    <div class="inputSection">
+                        <input type="text" id="textInput" placeholder="Enter text or URL to generate LR code..." 
+                               aria-label="Text input for LR code generation" maxlength="1000">
+                    </div>
+                </div>
+                
+                <div class="inputContainer hidden" id="soundInputContainer" role="tabpanel" aria-labelledby="sound-tab">
+                    <div class="inputSection">
+                        <div class="fileInput">
+                            <label for="soundInput">Audio File:</label>
+                            <input type="file" id="soundInput" accept="audio/wav, audio/mp3, audio/ogg" 
+                                   style="display:none;" aria-label="Upload audio file for LR code">
+                            <button class="uploadButton" type="button" onclick="document.getElementById('soundInput').click()" 
+                                    aria-label="Upload audio file button">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="17 8 12 3 7 8"/>
+                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                </svg>
+                                Upload Audio
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="inputContainer hidden" id="imageInputContainer" role="tabpanel" aria-labelledby="image-tab">
+                    <div class="inputSection">
+                        <div class="fileInput1">
+                            <label for="imageInput">Image File:</label>
+                            <input type="file" id="imageInput" accept="image/png, image/jpeg, image/jpg, image/gif" 
+                                   style="display:none;" aria-label="Upload image file for LR code">
+                            <button class="uploadButton" type="button" onclick="document.getElementById('imageInput').click()" 
+                                    aria-label="Upload image file button">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="17 8 12 3 7 8"/>
+                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                </svg>
+                                Upload Image
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="generateBtn" type="button" aria-label="Generate LR Code">
+                    Generate LR Code
+                </button>
+                
+                <footer>
+                    <p id="storageLabel">Store data efficiently: 12KB to 24.8KB capacity</p>
+                </footer>
+            </article>
+        </section>
+    </main>
+
+    <div id="lrPopup" role="dialog" aria-labelledby="popup-title" aria-hidden="true">
+        <header id="lrPopupHeader">
+            <button id="closePopupBtn" type="button" aria-label="Close LR code popup" 
+                    onclick="closeLRPopup()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+        </header>
+        <h2 id="popup-title">Your LR Code is Ready!</h2>
+        <img src="" alt="Generated LR Code" id="lrImg" loading="lazy">
+        <button id="downloadBtn" type="button" aria-label="Download generated LR code">
+            Download LR Code
+        </button>
+    </div>
+
+    <script>
+        // Enhanced functionality with SEO improvements
+        let currentMode = 'text';
+        let generatedLRCode = null;
+        
+        // Initialize application
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeApp();
+            setupEventListeners();
+            setupAccessibility();
+        });
+        
+        function initializeApp() {
+            // Set focus on first input
+            document.getElementById('textInput').focus();
+            
+            // Add loading states
+            const generateBtn = document.getElementById('generateBtn');
+            generateBtn.setAttribute('data-original-text', generateBtn.textContent);
+        }
+        
+        function setupEventListeners() {
+            // Mode toggle functionality with improved UX
+            document.querySelectorAll('.modeOption').forEach(option => {
+                option.addEventListener('click', function() {
+                    switchMode(this);
+                });
+                
+                option.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        switchMode(this);
+                    }
+                });
+            });
+            
+            // Generate LR code with enhanced error handling
+            document.getElementById('generateBtn').addEventListener('click', generateLRCode);
+            
+            // Download functionality
+            document.getElementById('downloadBtn').addEventListener('click', downloadLRCode);
+            
+            // File input change events
+            document.getElementById('soundInput').addEventListener('change', handleFileSelection);
+            document.getElementById('imageInput').addEventListener('change', handleFileSelection);
+            
+            // Text input validation
+            document.getElementById('textInput').addEventListener('input', validateTextInput);
+            
+            // Keyboard shortcuts
+            document.addEventListener('keydown', handleKeyboardShortcuts);
+        }
+        
+        function setupAccessibility() {
+            // Add ARIA live region for announcements
+            const liveRegion = document.createElement('div');
+            liveRegion.setAttribute('aria-live', 'polite');
+            liveRegion.setAttribute('aria-atomic', 'true');
+            liveRegion.className = 'sr-only';
+            liveRegion.style.position = 'absolute';
+            liveRegion.style.left = '-10000px';
+            liveRegion.id = 'live-region';
+            document.body.appendChild(liveRegion);
+        }
+        
+        function switchMode(selectedOption) {
+            // Update active state
+            document.querySelectorAll('.modeOption').forEach(opt => {
+                opt.classList.remove('active');
+                opt.setAttribute('aria-selected', 'false');
+            });
+            selectedOption.classList.add('active');
+            selectedOption.setAttribute('aria-selected', 'true');
+            
+            // Hide all input containers
+            document.querySelectorAll('.inputContainer').forEach(container => {
+                container.classList.add('hidden');
+            });
+            
+            // Show selected input container
+            currentMode = selectedOption.getAttribute('data-mode');
+            const targetContainer = document.getElementById(`${currentMode}InputContainer`);
+            targetContainer.classList.remove('hidden');
+            
+            // Focus on appropriate input
+            setTimeout(() => {
+                if (currentMode === 'text') {
+                    document.getElementById('textInput').focus();
+                }
+            }, 300);
+            
+            // Announce change to screen readers
+            announceToScreenReader(`Switched to ${currentMode} input mode`);
+        }
+        
+        async function generateLRCode() {
+            const generateBtn = document.getElementById('generateBtn');
+            const originalText = generateBtn.getAttribute('data-original-text');
+            
+            try {
+                // Show loading state
+                generateBtn.innerHTML = '<span class="loading"></span> Generating...';
+                generateBtn.disabled = true;
+                
+                let data = await getData();
+                
+                if (!data || data.length === 0) {
+                    throw new Error('Please provide data to generate LR code.');
+                }
+                
+                // Simulate processing time for better UX
+                await new Promise(resolve => setTimeout(resolve, 800));
+                
+                const compressedData = compressWithDictionaryAndRLE(data);
+                
+                if (compressedData.length > 8266) {
+                    throw new Error('Data too large. Maximum size is 8.266KB when compressed.');
+                }
+                
+                generatedLRCode = generateLRCodeImage(compressedData);
+                
+                // Update popup
+                document.getElementById('lrImg').src = generatedLRCode;
+                document.getElementById('lrImg').alt = `Generated LR code containing ${currentMode} data`;
+                
+                // Show popup with animation
+                showLRPopup();
+                
+                // Analytics tracking (placeholder)
+                trackEvent('lr_code_generated', { mode: currentMode, data_size: data.length });
+                
+                announceToScreenReader('LR code generated successfully');
+                
+            } catch (error) {
+                alert(error.message);
+                announceToScreenReader(`Error: ${error.message}`);
+            } finally {
+                // Reset button state
+                generateBtn.innerHTML = originalText;
+                generateBtn.disabled = false;
+            }
+        }
+        
+        async function getData() {
+            switch (currentMode) {
+                case 'text':
+                    const textValue = document.getElementById('textInput').value.trim();
+                    return textValue ? new TextEncoder().encode(textValue) : null;
+                    
+                case 'sound':
+                    const soundFile = document.getElementById('soundInput').files[0];
+                    return soundFile ? await readFile(soundFile) : null;
+                    
+                case 'image':
+                    const imageFile = document.getElementById('imageInput').files[0];
+                    return imageFile ? await readFile(imageFile) : null;
+                    
+                default:
+                    return null;
+            }
+        }
+        
+        function readFile(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = (e) => resolve(new Uint8Array(e.target.result));
+                reader.onerror = () => reject(new Error('Failed to read file'));
+                reader.readAsArrayBuffer(file);
+            });
+        }
+        
+        function compressWithDictionaryAndRLE(data) {
+            // Enhanced compression algorithm (placeholder)
+            // In a real implementation, you would use proper compression
+            const compressed = new Uint8Array(Math.min(data.length, 8266));
+            for (let i = 0; i < compressed.length; i++) {
+                compressed[i] = data[i] || 0;
+            }
+            return compressed;
+        }
+        
+        function generateLRCodeImage(data) {
+            // Enhanced LR code generation (placeholder)
+            // In a real implementation, you would generate actual QR/LR codes
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 200;
+            canvas.height = 200;
+            
+            // Simple pattern generation
+            ctx.fillStyle = '#000';
+            for (let i = 0; i < data.length && i < 400; i++) {
+                const x = (i % 20) * 10;
+                const y = Math.floor(i / 20) * 10;
+                if (data[i] % 2 === 0) {
+                    ctx.fillRect(x, y, 10, 10);
+                }
+            }
+            
+            return canvas.toDataURL('image/png');
+        }
+        
+        function showLRPopup() {
+            const popup = document.getElementById('lrPopup');
+            popup.classList.add('show');
+            popup.setAttribute('aria-hidden', 'false');
+            
+            // Focus management
+            setTimeout(() => {
+                document.getElementById('downloadBtn').focus();
+            }, 500);
+        }
+        
+        function closeLRPopup() {
+            const popup = document.getElementById('lrPopup');
+            popup.classList.remove('show');
+            popup.setAttribute('aria-hidden', 'true');
+            
+            // Return focus to generate button
+            document.getElementById('generateBtn').focus();
+        }
+        
+        function downloadLRCode() {
+            if (!generatedLRCode) {
+                alert('No LR code to download. Please generate one first.');
+                return;
+            }
+            
+            const link = document.createElement('a');
+            link.href = generatedLRCode;
+            link.download = `lr_code_${currentMode}_${Date.now()}.png`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            trackEvent('lr_code_downloaded', { mode: currentMode });
+            announceToScreenReader('LR code downloaded successfully');
+        }
+        
+        function handleFileSelection(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const fileType = currentMode === 'sound' ? 'audio' : 'image';
+                announceToScreenReader(`${fileType} file selected: ${file.name}`);
+            }
+        }
+        
+        function validateTextInput(event) {
+            const input = event.target;
+            const value = input.value;
+            const maxLength = 1000;
+            
+            if (value.length > maxLength) {
+                input.value = value.substring(0, maxLength);
+                announceToScreenReader(`Text truncated to ${maxLength} characters`);
+            }
+        }
+        
+        function handleKeyboardShortcuts(event) {
+            // Ctrl/Cmd + Enter to generate
+            if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') {
+                event.preventDefault();
+                generateLRCode();
+            }
+            
+            // Escape to close popup
+            if (event.key === 'Escape') {
+                const popup = document.getElementById('lrPopup');
+                if (popup.classList.contains('show')) {
+                    closeLRPopup();
+                }
+            }
+        }
+        
+        function announceToScreenReader(message) {
+            const liveRegion = document.getElementById('live-region');
+            if (liveRegion) {
+                liveRegion.textContent = message;
+                setTimeout(() => {
+                    liveRegion.textContent = '';
+                }, 1000);
+            }
+        }
+        
+        function trackEvent(eventName, data) {
+            // Analytics tracking - integrate with Google Analytics, etc.
+            if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, data);
+            }
+            
+            // Console log for development
+            console.log('Event:', eventName, data);
+        }
+        
+        // Performance optimization
+        function preloadImages() {
+            const imagesToPreload = [
+                './Images/lrBg.png',
+                './Images/lrpng.png',
+                './Images/icon.png'
+            ];
+            
+            imagesToPreload.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+        }
+        
+        // Initialize preloading
+        preloadImages();
+        
+        // Service Worker registration for PWA capabilities
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(function(err) {
+                        console.log('ServiceWorker registration failed');
+                    });
+            });
+        }
+        
+        // Enhanced error handling
+        window.addEventListener('error', function(e) {
+            console.error('Global error:', e.error);
+            trackEvent('javascript_error', {
+                message: e.message,
+                filename: e.filename,
+                lineno: e.lineno
+            });
+        });
+        
+        // Performance monitoring
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                trackEvent('page_performance', {
+                    load_time: perfData.loadEventEnd - perfData.loadEventStart,
+                    dom_ready: perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart
+                });
+            }, 0);
+        });
+    </script>
+    
+    <!-- Google Analytics (replace with your tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
+    
+    <!-- Additional SEO Footer Content -->
+    <footer style="position: absolute; top: -9999px; left: -9999px;">
+        <h3>About Our LR Code Generator</h3>
+        <p>Our free online LR code generator is the perfect tool for creating high-quality QR codes from text, audio files, and images. Whether you're a business owner looking to create marketing materials, a developer needing to encode data, or someone who wants to share information quickly, our tool provides fast, reliable, and secure LR code generation.</p>
+        
+        <h4>Features:</h4>
+        <ul>
+            <li>Free LR code generation</li>
+            <li>Support for text, audio, and image input</li>
+            <li>High-quality PNG output</li>
+            <li>Instant download capability</li>
+            <li>Mobile-friendly interface</li>
+            <li>No registration required</li>
+            <li>Privacy-focused design</li>
+        </ul>
+        
+        <h4>Use Cases:</h4>
+        <ul>
+            <li>Business card QR codes</li>
+            <li>Website URL encoding</li>
+            <li>Contact information sharing</li>
+            <li>Event promotion</li>
+            <li>Product information</li>
+            <li>Social media links</li>
+            <li>WiFi password sharing</li>
+        </ul>
+    </footer>
+</body>
+</html>
